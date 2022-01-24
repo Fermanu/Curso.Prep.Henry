@@ -167,7 +167,6 @@ function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   
-}
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -175,46 +174,57 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
+  var resul5= Math.ceil (numero);
+  if(resul5>=0)
+  { console.log('el numero ingresado es positivo')}
+  else{console.log('El numero ingresado es negativo')}
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var hola= str + '!'
+  return (hola);
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  var np= nombre +'  '+ apellido;
+  return (np);
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+  var np1= 'Hola  '+ nombre;
+  return (np1);
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  var area= alto*ancho;
+  return (area) 
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  var area2= 4*lado;
+  return (area2) 
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var area2= (base*altura)/2;
+  return (area2) 
 }
 
 
@@ -222,7 +232,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var dolar = euro*1.20
+  return (dolar)
 }
 
 
@@ -232,6 +243,29 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+  
+  var letra2=letra.length
+  if(letra2=='1')
+
+{if(letra=='a')
+{
+  console.log('Es una vocal')}
+  if(letra=='e')
+ { 
+  console.log('Es una vocal')}
+  if(letra=='i')
+  {
+  console.log('Es una vocal')}
+  if(letra=='o')
+  {
+  console.log('Es una vocal')}
+  if(letra=='u')
+  {
+  console.log('Es una vocal')}
+  
+}
+else {Console.log('El dato ingresado no es correcto')}
+
   
 }
 

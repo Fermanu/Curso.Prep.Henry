@@ -3,26 +3,36 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return (array[0])
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var b=array.length
+
+  return(array[b-1])
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+ return (array.length)
+
 }
-
-
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var b=array.length
+  for (var a=0;a<b;a=a+1)
+  {
+    array[a]=array[a]+1
+  }
+  return (array)
 }
 
 
@@ -30,6 +40,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  var b= array.length;
+  var c=array[b-1]+elemento;
+array[b-1]=c
+return (array)
 }
 
 
@@ -38,6 +52,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  
 }
 
 
